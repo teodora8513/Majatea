@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic" ,Ariel sans-serif;
+}
+
+a{
+    color: rgb(152,152,152);
+    text-decoration: none;
+}
+
+.main-menu{
+    background-color: white;
+    border-radius: 3px;
+    position: sticky;
+    top: 0;
+}
+
+.main-menu ul{
+    height: 80px;
+    display: grid;
+    grid-template-columns: auto 100px 150px 100px 100px auto;
+    list-style-type: none;
+}
+
+.main-menu ul li{
+    margin-left: -100px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-menu ul li:hover{
+    font-size: 130%;
+}
+
+header{
+    margin-top: 20px;
+    background-image: linear-gradient(to right,rgb(80,80,80),rgb(176,176,176));
+    height: 200px;
+    display: grid;
+    justify-content: left;
+    align-content: center;
+}
+
+#kontakt h1{
+    margin: 0px 0px 10px 150px;
+    color: white;
+    font-family: "Arial Black", Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: bold;
+    text-shadow: 5px 5px 10px rgb(76,76,76);
+}
+
+#kontakt p{
+    margin-left: 150px;
+    color: rgb(223, 143, 39);
+    font-size: 20px;
+    font-style: bold;
+    text-shadow: 2px 2px 10px rgb(202, 142, 29);
+}
+
+#middle{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#lokacija img{
+    height: 350px;
+    width: 450px;
+    border-radius: 5px;
+    margin: 50px 0 50px 0;
+    box-shadow: 5px 5px 2px rgb(152,152,152);
+}
+
+.forma-za-unos{
+    margin: 50px 0 50px 150px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+#unos{
+    display: grid;
+    grid-template-columns: 200px 50px 200px;
+}
+
+.input-polje{
+    width: 200px;
+    height: 35px;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+.poruka-polje{
+    width: 450px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+.label{
+    font-size: 20px;
+    font-family: "Century Gothic" ,Ariel sans-serif;
+    color: rgb(108,108,108);
+    margin: 5px;
+}
+
+.button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#kontakt-info{
+    height: 200px;
+    background-image: linear-gradient(to bottom,rgb(160,160,160),rgb(80,80,80));
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 150px;
+    padding-bottom: 30px;
+}
+
+#kontakt-info h2{
+    color: rgb(64,64,64);
+    font-family: "Arial Black", Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: bold;
+    text-shadow: 1px 1px 3px rgb(76,76,76);
+    padding: 20px 0;
+}
+
+#kontakt-info p{
+    color: black;
+    font-size: 20px;
+    font-style: bold;
+    margin-left: 10px;
+}
+
+#kontakt-info a{
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+}
+
+.emotikon{
+    height: 20px;
+    width: 25px;
+}
+
+footer img{
+    height: 80px;
+    widows: 200px;
+    padding: 50px 20px;
+}
+
+#footer-logo{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom,rgb(102,102,102),whitesmoke);
+}
+
+.s-media{
+    display: grid;
+    justify-content: center;
+}
+
+.sm{
+    width: 30px;
+    height: 25px;
+}
+
+@media(max-width:620px){
+    .main-menu{
+        background-color: white;
+        border-radius: 3px;
+        position: sticky;
+        top: 0;
+        height: 180px;
+    }
+    
+    .main-menu ul{
+        height: 80px;
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        list-style-type: none;
+    }
+    
+    .main-menu ul li{
+        margin-left: -100px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .main-menu ul li:hover{
+        font-size: 130%;
+    }
+    
+    header{
+        margin-top: 20px;
+        background-image: linear-gradient(to right,rgb(80,80,80),rgb(176,176,176));
+        height: 200px;
+        display: grid;
+        justify-content: left;
+        align-content: center;
+    }
+    
+    #kontakt h1{
+        margin: 0px 0px 10px 50px;
+        color: white;
+        font-family: "Arial Black", Helvetica, sans-serif;
+        font-size: 30px;
+        font-style: bold;
+        text-shadow: 5px 5px 10px rgb(76,76,76);
+    }
+    
+    #kontakt p{
+        margin-left: 50px;
+        color: rgb(223, 143, 39);
+        font-size: 20px;
+        font-style: bold;
+        text-shadow: 2px 2px 10px rgb(202, 142, 29);
+    }
+    
+    #middle{
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+    
+    #lokacija img{
+        height: 300px;
+        width: 350px;
+        border-radius: 5px;
+        margin: 30px 0 30px 0;
+        box-shadow: 5px 5px 2px rgb(152,152,152);
+    }
+    
+    .forma-za-unos{
+        margin: 50px 0 50px 50px;
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+    
+    #unos{
+        display: grid;
+        grid-template-columns: 130px 30px 130px;
+    }
+    
+    .input-polje{
+        width: 200px;
+        height: 35px;
+        border-radius: 2px;
+        margin: 5px;
+    }
+    
+    .poruka-polje{
+        width: 350px;
+        height: 200px;
+        margin: 5px;
+        border-radius: 2px;
+    }
+    
+    .label{
+        font-size: 20px;
+        font-family: "Century Gothic" ,Ariel sans-serif;
+        color: rgb(108,108,108);
+        margin: 5px;
+    }
+    
+    .button{
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    
+    #kontakt-info{
+        height: 200px;
+        background-image: linear-gradient(to bottom,rgb(160,160,160),rgb(80,80,80));
+        display: grid;
+        grid-template-columns: auto;
+        padding-left: 50px;
+        padding-bottom: 30px;
+    }
+    
+    #kontakt-info h2{
+        color: rgb(64,64,64);
+        font-family: "Arial Black", Helvetica, sans-serif;
+        font-size: 25px;
+        font-style: bold;
+        text-shadow: 1px 1px 3px rgb(76,76,76);
+        padding: 20px 0;
+    }
+    
+    #kontakt-info p{
+        color: black;
+        font-size: 20px;
+        font-style: bold;
+        margin-left: 10px;
+    }
+    
+    #kontakt-info a{
+        font-size: 20px;
+        color: black;
+        margin-left: 10px;
+    }
+    
+    .emotikon{
+        height: 20px;
+        width: 25px;
+    }
+    
+    footer img{
+        height: 80px;
+        widows: 200px;
+        padding: 50px 20px;
+    }
+    
+    #footer-logo{
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(to bottom,rgb(102,102,102),whitesmoke);
+    }
+    
+    .s-media{
+        display: grid;
+        justify-content: center;
+    }
+    
+    .sm{
+        width: 30px;
+        height: 25px;
+    }
+}

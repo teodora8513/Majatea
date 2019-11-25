@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic" ,Ariel sans-serif;
+}
+
+a{
+    color: rgb(152,152,152);
+    text-decoration: none;
+}
+
+.main-menu{
+    background-color: white;
+    border-radius: 3px;
+    position: sticky;
+    top: 0;
+}
+
+.main-menu ul{
+    height: 80px;
+    display: grid;
+    grid-template-columns: auto 100px 150px 100px 100px auto;
+    list-style-type: none;
+}
+
+.main-menu ul li{
+    margin-left: -100px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-menu ul li:hover{
+    font-size: 130%;
+}
+
+header{
+    margin-top: 20px;
+    background-image: linear-gradient(to right,rgb(80,80,80),rgb(176,176,176));
+    height: 200px;
+    display: grid;
+    justify-content: left;
+    align-content: center;
+}
+
+#prijava h1{
+    margin: 0px 0px 10px 150px;
+    color: white;
+    font-family: "Arial Black", Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: bold;
+    text-shadow: 5px 5px 10px rgb(76,76,76);
+}
+
+#prijava p{
+    margin-left: 150px;
+    color: rgb(223, 143, 39);
+    font-size: 20px;
+    font-style: bold;
+    text-shadow: 2px 2px 10px rgb(202, 142, 29);
+}
+
+#forma-za-prijavu{
+    display: grid;
+    justify-content: center;
+}
+
+#forma-za-prijavu h2{
+    font-size: 30px;
+    font-family: "Arial Black", Helvetica, sans-serif;
+    text-shadow: 5px 5px 10px rgb(76,76,76);
+    margin: 50px 0 10px 0;
+}
+
+#forma-za-prijavu p{
+    font-size: 20px;
+    text-emphasis-style: bold;
+    margin-bottom: 10px;
+}
+
+.label{
+    display: block;
+    width: 400px;
+    
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+
+
+.input-polje{
+    width: 200px;
+    height: 35px;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+footer img{
+    height: 80px;
+    widows: 200px;
+    padding: 50px 20px;
+}
+
+#footer-logo{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom,rgb(102,102,102),whitesmoke);
+}
+
+.s-media{
+    display: grid;
+    justify-content: center;
+}
+
+.sm{
+    width: 30px;
+    height: 25px;
+}
+
+@media(max-width:620px){
+    .main-menu{
+        background-color: white;
+        border-radius: 3px;
+        position: sticky;
+        top: 0;
+        height: 180px;
+    }
+    
+    .main-menu ul{
+        height: 80px;
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        list-style-type: none;
+    }
+
+    #prijava h1{
+        margin: 0px 0px 10px 50px;
+        color: white;
+        font-family: "Arial Black", Helvetica, sans-serif;
+        font-size: 30px;
+        font-style: bold;
+        text-shadow: 5px 5px 10px rgb(76,76,76);
+    }
+    
+    #prijava p{
+        margin-left: 50px;
+        color: rgb(223, 143, 39);
+        font-size: 20px;
+        font-style: bold;
+        text-shadow: 2px 2px 10px rgb(202, 142, 29);
+    }
+
+    #forma-za-prijavu h2{
+        font-size: 20px;
+        font-family: "Arial Black", Helvetica, sans-serif;
+        text-shadow: 5px 5px 10px rgb(76,76,76);
+        margin: 50px 0 10px 0;
+    }
+
+    #forma-za-prijavu p{
+        font-size: 15px;
+        text-emphasis-style: bold;
+        margin-bottom: 10px;
+    }
+}

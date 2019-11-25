@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link type="text/css" rel="stylesheet" href="css/kontakt.css">
+    <script src="js/validation/lib/jquery.js"></script>
+    <script src="js/validation/dist/jquery.validate.js"></script>
+    <title>Kontakt - EBEC Beograd</title>
+</head>
+<body>
+    
+    <div id="wrap">
+        <nav class="main-menu">
+            <ul>
+                <li><a href="pocetna.html"><img src="img/ebec-logo.png" style="height: 80px;width: 200px;"></a></li>
+                <li><a href="partneri.html">PARTNERI</a></li>
+                <li><a href="organizatori.html">ORGANIZATORI</a></li>
+                <li><a href="#">KONTAKT</a></li>
+                <li><a href="prijava.html">PRIJAVA</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <div id="kontakt">
+                <h1>KONTAKT</h1>
+                <p>Stupi u kontakt sa organizatorima</p>
+            </div>
+        </header>
+
+        <div id="middle">
+
+             <form id="contactForm" action="" class="forma-za-unos" method="GET" novalidate="novalidate">
+                      
+                <div id="unos">
+                    <span> <label for="cname" class="label"> Vaše ime *<br /></label>
+                        <input id="cname" type="text" name="your-name" value="" size="40" class="input-polje" required/>
+                    </span>
+                    <span></span>
+                    <span>
+                        <label for="cemail" class="label"> Vaš e-mail *<br /></label>
+                        <input id="cemail" type="email" name="your-email" value="" size="40" class="input-polje" required/>
+                    </span>
+
+                </div>   
+
+               <span> <label for="comment" class="label"> Poruka<br /></label>
+                    <textarea name="your-message" cols="40" rows="10" class="poruka-polje" aria-invalid="false"></textarea></span>
+                     
+                 <span><button onclick="send()" class="button">Pošalji</button></span>
+
+                    <script>
+                    function send() {
+                        alert("Vaša poruka je uspešno poslata");
+                      }
+                    </script>
+                            
+                </form>
+
+            <div id="lokacija"> 
+                    <img id="loc" src="img/map.PNG" alt="">
+            </div>
+
+            <script>
+                    document.getElementById("loc").addEventListener("mouseover", mapEvent);
+                    
+                    function mapEvent() {
+                      alert ("Nalazimo se u Karnegijevoj 4... Čekamo vas!");
+                    }
+                    </script>
+
+        </div>
+
+            <div id="kontakt-info">
+                <h2>Kontakt informacije</h2>
+                <p style="margin-bottom: 20px;">Udruženje studenata tehnike - Beograd</p>
+                <span>
+                    <img src="img/location.png" alt="" class="emotikon" style="float: left;">
+                    <p style="float: left;">Karnegijeva 4, 11 000 Beograd</p>
+                </span>
+                <span>
+                    <img src="img/phone.png" alt="" class="emotikon" style="float: left;">
+                    <p style="float: left;">011/337 05 45</p>
+                </span>
+                <span>
+                    <img src="img/mail.png" alt="" class="emotikon">
+                    <a href="mailto:beograd@BEST.eu.org">beograd@BEST.eu.org</a>
+                </span>
+            </div>
+
+        </div>
+
+        <footer>
+            <div id="footer-logo">
+                <img src="img/ebec-logo.png" alt="">
+                <img src="img/best-logo.png" alt="">
+            </div>
+
+            <div class="s-media">
+                <span>
+                <span>
+                    <a href="https://www.facebook.com/best.beograd/" target=_blank><img src="img/fb.png" alt="" class="sm"></a>
+                </span>
+
+                <span>
+                    <a href="https://www.linkedin.com/company/best-belgrade" target=_blank><img src="img/ln.png" alt="" class="sm"></a>
+                </span>
+
+                <span>
+                    <a href="https://twitter.com/best_bg" target=_blank><img src="img/tw.png" alt="" class="sm"></a>
+                </span>
+
+                <span>
+                    <a href="https://www.instagram.com/best_belgrade/" target=_blank><img src="img/ig.jpg" alt="" class="sm"></a>
+                </span>
+
+                <span>
+                    <a href="https://www.youtube.com/channel/UCqT8Cw62CbiS_hJ00t7n9Hw" target=_blank><img src="img/youtube.png" alt="" class="sm"></a>
+                </span>
+                </span>
+            </div>
+
+        </footer>
+    </div>
+
+    <script>
+        $("#contactForm").validate();
+    </script>
+
+</body>
+</html>
