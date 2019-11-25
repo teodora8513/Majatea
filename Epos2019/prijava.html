@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link type="text/css" rel="stylesheet" href="css/prijava.css">
+    <script src="js/validation/lib/jquery.js"></script>
+    <script src="js/validation/dist/jquery.validate.js"></script>
+    <title>Prijava - EBEC Beograd</title>
+</head>
+<body>
+    
+        <div id="wrap">
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="pocetna.html"><img src="img/ebec-logo.png" style="height: 80px;width: 200px;"></a></li>
+                        <li><a href="partneri.html">PARTNERI</a></li>
+                        <li><a href="organizatori.html">ORGANIZATORI</a></li>
+                        <li><a href="kontakt.html">KONTAKT</a></li>
+                        <li><a href="#">PRIJAVA</a></li>
+                    </ul>
+                </nav>
+        
+                <header>
+                    <div id="prijava">
+                        <h1>PRIJAVA</h1>
+                        <p>Obezbedi svoje mesto među takmičarima</p>
+                    </div>
+                </header>
+        
+                <div id="middle">
+        
+                <form class="cmxform" id="forma-za-prijavu" method="GET" action="">
+                    <h2>Popunite formu za prijavu</h2><br>
+                    <p>Rok za prijavu je: 30.11.2019. 23:59</p>
+
+                    <button onclick="document.getElementById('datum').innerHTML=Date()" style="width: 250px; padding: 5px;">Proveri datum</button>
+                    <p id="datum"></p>
+                    
+                    <span>
+                        <label class="label" for="cname">Ime</label>
+                        <input type="text" name="ime" id="cname" class="input-polje" required>
+                    </span><br>
+
+                    <span>
+                        <label class="label" for="cname">Prezime</label>
+                        <input type="text" name="prezime" id="cname" class="input-polje" required>
+                    </span><br>
+
+                    <span>
+                        <label class="label" for="cemail">E-mail</label>
+                        <input type="email" name="email" id="cemail" class="input-polje" required>
+                    </span><br>
+
+                    <span>
+                        <label class="label" for="content">Kontakt telefon</label>
+                        <input type="text" name="telefon" class="input-polje">
+                    </span><br>
+
+                    <span>
+                        <label for="content">Pol</label><br>
+                        <input type="radio" name="pol" value="muski">Muški<br>
+                        <input type="radio" name="pol" value="zenski">Ženski<br>
+                        <input type="radio" name="pol" value="drugo">Drugo<br>
+                    </span><br>
+
+                        <span>
+                            <label for="content">Fakultet</label><br>
+                            <input type="checkbox" name="fakultet" value="fon">Fakultet organizacionih nauka<br>
+                            <input type="checkbox" name="fakultet" value="matf">Matematički fakultet<br>
+                            <input type="checkbox" name="fakultet" value="etf">Elektrotehnički fakultet<br>
+                            <input type="checkbox" name="fakultet" value="mf">Mašinski fakultet<br>
+                        </span><br>
+
+                    <span>
+                        <label for="content">Godina studija</label><br>
+                        <input type="radio" name="godina" value="prva">Prva<br>
+                        <input type="radio" name="godina" value="druga">Druga<br>
+                        <input type="radio" name="godina" value="treca">Treća<br>
+                        <input type="radio" name="godina" value="cetvrta">Četvrta<br>
+                    </span><br>
+
+                    <button onclick="myFunction()" class="btn">Pošalji</button>
+
+                    <script>
+                    function myFunction() {
+                        alert("Vaša prijava je uspešno evidentirana");
+                      }
+                    </script>
+
+                </form>
+        
+                </div>
+        
+                <footer>
+                    <div id="footer-logo">
+                        <img src="img/ebec-logo.png" alt="">
+                        <img src="img/best-logo.png" alt="">
+                    </div>
+        
+                    <div class="s-media">
+                        <span>
+                        <span>
+                            <a href="https://www.facebook.com/best.beograd/" target=_blank><img src="img/fb.png" alt="" class="sm"></a>
+                        </span>
+        
+                        <span>
+                            <a href="https://www.linkedin.com/company/best-belgrade" target=_blank><img src="img/ln.png" alt="" class="sm"></a>
+                        </span>
+        
+                        <span>
+                            <a href="https://twitter.com/best_bg" target=_blank><img src="img/tw.png" alt="" class="sm"></a>
+                        </span>
+        
+                        <span>
+                            <a href="https://www.instagram.com/best_belgrade/" target=_blank><img src="img/ig.jpg" alt="" class="sm"></a>
+                        </span>
+        
+                        <span>
+                            <a href="https://www.youtube.com/channel/UCqT8Cw62CbiS_hJ00t7n9Hw" target=_blank><img src="img/youtube.png" alt="" class="sm"></a>
+                        </span>
+                        </span>
+                    </div>
+        
+                </footer>
+            </div>
+
+            <script>
+                $("#forma-za-prijavu").validate();
+            </script>
+</body>
+</html>
